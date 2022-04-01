@@ -32,7 +32,7 @@ async function signUp(pEmail, pPassword, pFirstName, pLastName, pErrorElement) {
   if (error) {
     displayError(error, pErrorElement);
   } else {
-    sessionStorage.setItem("user_obj", user);
+    sessionStorage.setItem("user_obj", JSON.stringify(user));
   }
 }
 
@@ -54,10 +54,10 @@ function displayError(error, errorElement) {
 }
 
 signIn(
-  "15BoltonT@nobel.herts.sch.uk",
-  "jenson",
-  document.getElementById("app")
-);
+    "15BoltonT@nobel.herts.sch.uk",
+    "jenson",
+    document.getElementById("app")
+).then(() => {});
 
 console.log(JSON.parse(sessionStorage.getItem("user_obj")).id);
 
