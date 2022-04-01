@@ -1,0 +1,19 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+# Editor-based HTTP Client requests
+/httpRequests/
+
+# Parcel caching
+/.cache
+
+# Node modules
+node_modules/
+
+# IDE files
+.idea/
+.codesandbox/
+
+# Build directories
+/dist
